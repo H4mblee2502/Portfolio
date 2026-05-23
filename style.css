@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #ffffff;
+}
+
+.content {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+}
+
+/* Sidebar */
+.sideBar {
+    width: 260px;
+    background: #1f2734;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.Profiile {
+    width: 220px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 50px;
+}
+
+nav ul {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+}
+
+nav ul li {
+    margin: 35px 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #00bcd4;
+}
+
+/* Main Content */
+.introductioncontent {
+    flex: 1;
+    background: #f1f1f1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    text-align: center;
+}
+
+.introductioncontent h1 {
+    font-size: 70px;
+    font-style: italic;
+    font-weight: 800;
+    color: #1f2734;
+}
+
+.introductioncontent h1 span {
+    color: #1f2734;
+}
+
+.introductioncontent h3 {
+    font-size: 28px;
+    font-style: italic;
+    font-weight: 300;
+    color: #444;
+    margin-bottom: 40px;
+}
+
+.introductioncontent p {
+    max-width: 700px;
+    font-size: 28px;
+    line-height: 1.5;
+    font-style: italic;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Skills */
+.skills-tools {
+    display: flex;
+    gap: 30px;
+    font-size: 60px;
+    margin-bottom: 50px;
+}
+
+.html {
+    width: 50px;
+}
+
+.css {
+    width: 50px;
+}
+
+.js {
+    width: 50px;
+}
+
+.github {
+    width: 50px;
+}
+
+.git {
+   width: 50px;
+}
+
+.vscode {
+    width: 50px;
+}
+
+.canva {
+    width: 50px;
+}
+
+/* Buttons */
+.buttons {
+    display: flex;
+    gap: 80px;
+}
+
+.hire, .email {
+    text-decoration: none;
+    background: #1f2734;
+    color: white;
+    padding: 18px 50px;
+    border-radius: 15px;
+    font-size: 28px;
+    font-style: italic;
+    transition: 0.3s;
+}
+
+.hire:hover, .email:hover{
+    background: #00bcd4;
+}
+
+/* Responsive */
+@media (max-width: 900px) {
+    .content {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+    }
+
+    .introductioncontent h1 {
+        font-size: 40px;
+    }
+
+    .introductioncontent h3 {
+        font-size: 18px;
+    }
+
+    .introductioncontent p {
+        font-size: 18px;
+    }
+
+    .skills-tools {
+        font-size: 35px;
+        flex-wrap: wrap;
+    }
+
+    .buttons {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
